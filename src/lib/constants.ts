@@ -1,5 +1,5 @@
 export const BRAND_INFO = {
-  name: 'XD Studios',
+  name: 'XD Creations',
   tagline: 'Building Digital Solutions for Individuals & Businesses',
   email: 'hello@xdstudios.dev', // Replace with real email
   whatsapp: '910000000000', // Replace with real number (with country code, no +)

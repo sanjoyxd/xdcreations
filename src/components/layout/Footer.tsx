@@ -30,7 +30,7 @@ export default function Footer() {
           <div className={styles.brand}>
             <Link href="/" className={styles.logo}>
               <div className={styles.logoIcon}><Zap size={18} fill="currentColor" /></div>
-              <span>XD <span className="gradient-text">Studios</span></span>
+              <span>XD <span className="gradient-text">Creations</span></span>
             </Link>
             <p className={styles.tagline}>
               Building premium digital solutions for individuals & businesses. Clean code, stunning design, real results.
@@ -69,7 +69,7 @@ export default function Footer() {
         </div>
 
         <div className={styles.bottom}>
-          <p>© {new Date().getFullYear()} XD Studios. All rights reserved.</p>
+          <p>© {new Date().getFullYear()} XD Creations. All rights reserved.</p>
           <p className={styles.madeWith}>
             Made with <Heart size={13} fill="#FF6584" color="#FF6584" /> by <strong>Sanjoy</strong>
           </p>

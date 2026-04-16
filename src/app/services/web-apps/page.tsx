@@ -5,7 +5,7 @@ import CTABanner from '@/components/ui/CTABanner';
 import styles from '../service.module.css';
 
 export const metadata: Metadata = {
-  title: 'Web App Development — XD Studios',
+  title: 'Web App Development — XD Creations',
   description: 'Custom web application development with dashboards, auth, real-time data, and cloud deployment.',
 };
 
@@ -86,12 +86,12 @@ export default function WebAppsPage() {
           <div className="section-header">
             <div className="section-label">Featured Example</div>
             <h2 className="section-title">Result Management <span className="gradient-text">System</span></h2>
-            <p className="section-subtitle">A complete school result management app built with XD Studios — see it in action.</p>
+            <p className="section-subtitle">A complete school result management app built with XD Creations — see it in action.</p>
           </div>
           <div className={styles.demoContainer}>
             <div className={styles.demoBar}>
               <div className={styles.demoDots}><span /><span /><span /></div>
-              <div className={styles.demoUrl}>result-system.xdstudios.dev</div>
+              <div className={styles.demoUrl}>result-system.xdcreations.dev</div>
             </div>
             <div className={styles.demoContent}>
               <div className={styles.demoNav}>

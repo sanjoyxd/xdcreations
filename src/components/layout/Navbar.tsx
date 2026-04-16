@@ -38,7 +38,7 @@ export default function Navbar() {
               <Zap size={18} fill="currentColor" />
             </div>
             <span className={styles.logoText}>
-              XD <span className="gradient-text">Studios</span>
+              XD <span className="gradient-text">Creations</span>
             </span>
           </Link>
 

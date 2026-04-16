@@ -5,7 +5,7 @@ import CTABanner from '@/components/ui/CTABanner';
 import styles from './page.module.css';
 
 export const metadata: Metadata = {
-  title: 'Result Management System — XD Studios',
+  title: 'Result Management System — XD Creations',
   description: 'A comprehensive school result management system featuring student records, marks entry, grading, report generation, and analytics.',
 };
 

@@ -5,7 +5,7 @@ import CTABanner from '@/components/ui/CTABanner';
 import styles from '../service.module.css';
 
 export const metadata: Metadata = {
-  title: 'Graphic Design — XD Studios',
+  title: 'Graphic Design — XD Creations',
   description: 'Professional graphic design: logos, brand identities, banners, posters, business cards, and social media graphics.',
 };
 

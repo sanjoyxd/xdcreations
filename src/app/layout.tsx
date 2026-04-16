@@ -4,12 +4,12 @@ import Navbar from '@/components/layout/Navbar';
 import Footer from '@/components/layout/Footer';
 
 export const metadata: Metadata = {
-  title: 'XD Studios — Building Digital Solutions',
-  description: 'XD Studios is your partner for Website Development, Web Applications, SaaS Products, and Graphic Design. Premium digital solutions for individuals & businesses.',
-  keywords: 'web development, web apps, SaaS, graphic design, XD Studios, digital agency',
-  authors: [{ name: 'Sanjoy — XD Studios' }],
+  title: 'XD Creations — Building Digital Solutions',
+  description: 'XD Creations is your partner for Website Development, Web Applications, SaaS Products, and Graphic Design. Premium digital solutions for individuals & businesses.',
+  keywords: 'web development, web apps, SaaS, graphic design, XD Creations, digital agency',
+  authors: [{ name: 'Sanjoy — XD Creations' }],
   openGraph: {
-    title: 'XD Studios — Building Digital Solutions',
+    title: 'XD Creations — Building Digital Solutions',
     description: 'Premium digital solutions for individuals & businesses.',
     type: 'website',
   },

@@ -8,7 +8,7 @@ const testimonials = [
   {
     name: 'Rahul Sharma',
     role: 'Founder, TechStart India',
-    review: 'XD Studios delivered beyond expectations. Our landing page now converts 3x better and the design is absolutely stunning. Sanjoy truly understands what modern brands need.',
+    review: 'XD Creations delivered beyond expectations. Our landing page now converts 3x better and the design is absolutely stunning. Sanjoy truly understands what modern brands need.',
     rating: 5,
     avatar: 'RS',
   },
@@ -22,7 +22,7 @@ const testimonials = [
   {
     name: 'Ankit Verma',
     role: 'E-commerce Entrepreneur',
-    review: 'My brand logo and business card design got more compliments than my products did at the expo! The branding work from XD Studios is top-tier.',
+    review: 'My brand logo and business card design got more compliments than my products did at the expo! The branding work from XD Creations is top-tier.',
     rating: 5,
     avatar: 'AV',
   },

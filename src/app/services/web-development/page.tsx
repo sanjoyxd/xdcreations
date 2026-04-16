@@ -6,7 +6,7 @@ import CTABanner from '@/components/ui/CTABanner';
 import styles from '../service.module.css';
 
 export const metadata: Metadata = {
-  title: 'Website Development — XD Studios',
+  title: 'Website Development — XD Creations',
   description: 'Professional website development services — landing pages, business sites, portfolios, and CMS-driven websites that rank and convert.',
 };
 
@@ -98,7 +98,7 @@ export default function WebDevPage() {
           <div className={styles.demoContainer}>
             <div className={styles.demoBar}>
               <div className={styles.demoDots}><span /><span /><span /></div>
-              <div className={styles.demoUrl}>xdstudios.dev/demo</div>
+              <div className={styles.demoUrl}>xdcreations.dev/demo</div>
             </div>
             <div className={styles.demoContent}>
               <div className={styles.demoNav}>

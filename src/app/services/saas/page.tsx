@@ -5,7 +5,7 @@ import CTABanner from '@/components/ui/CTABanner';
 import styles from '../service.module.css';
 
 export const metadata: Metadata = {
-  title: 'SaaS Products — XD Studios',
+  title: 'SaaS Products — XD Creations',
   description: 'End-to-end SaaS development with billing, multi-tenancy, analytics, and admin panels.',
 };
 
