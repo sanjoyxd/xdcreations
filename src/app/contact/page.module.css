@@ -1,0 +1,92 @@
+.hero {
+  padding: calc(var(--nav-height) + 5rem) 0 3rem;
+  text-align: center;
+}
+.heroTitle { font-size: clamp(2.5rem, 5vw, 4rem); font-weight: 800; margin: 0.75rem 0 1rem; }
+.heroSub { font-size: 1.05rem; color: var(--text-secondary); max-width: 500px; margin: 0 auto; line-height: 1.7; }
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1.4fr;
+  gap: 4rem;
+  align-items: start;
+}
+
+.info {}
+.infoTitle { font-size: 1.5rem; font-weight: 700; margin-bottom: 1rem; }
+.infoText { font-size: 0.93rem; color: var(--text-secondary); line-height: 1.8; margin-bottom: 2.5rem; }
+
+.contactMethods { display: flex; flex-direction: column; gap: 1rem; }
+.method {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1.25rem;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  text-decoration: none;
+  transition: all 0.25s;
+}
+.method:hover { border-color: var(--border-hover); transform: translateX(4px); }
+.methodIcon {
+  width: 46px; height: 46px;
+  border-radius: 12px;
+  background: rgba(108,99,255,0.12);
+  border: 1px solid rgba(108,99,255,0.25);
+  display: flex; align-items: center; justify-content: center;
+  flex-shrink: 0;
+}
+.methodLabel { font-size: 0.9rem; font-weight: 700; color: var(--text-primary); }
+.methodValue { font-size: 0.82rem; color: var(--text-muted); margin-top: 0.15rem; }
+
+/* Form */
+.formCard {
+  background: var(--bg-card);
+  border: 1px solid rgba(108,99,255,0.2);
+  border-radius: var(--radius-xl);
+  padding: 2.5rem;
+}
+.form { display: flex; flex-direction: column; gap: 1.25rem; }
+
+.row { display: grid; grid-template-columns: 1fr 1fr; gap: 1.25rem; }
+
+.field { display: flex; flex-direction: column; gap: 0.4rem; }
+.label { font-size: 0.82rem; font-weight: 600; color: var(--text-secondary); }
+.input {
+  padding: 0.85rem 1rem;
+  background: rgba(255,255,255,0.04);
+  border: 1.5px solid var(--border);
+  border-radius: 10px;
+  color: var(--text-primary);
+  font-size: 0.93rem;
+  transition: border-color 0.2s;
+  outline: none;
+  width: 100%;
+}
+.input:focus { border-color: var(--accent-primary); }
+.input::placeholder { color: var(--text-muted); }
+.textarea { resize: vertical; min-height: 130px; }
+
+/* Success */
+.success {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 3rem 2rem;
+  gap: 1rem;
+  min-height: 300px;
+}
+.successIcon { color: #00E5A0; }
+.success h3 { font-size: 1.4rem; font-weight: 700; }
+.success p { color: var(--text-secondary); }
+
+@media (max-width: 1024px) {
+  .grid { grid-template-columns: 1fr; gap: 3rem; }
+}
+@media (max-width: 640px) {
+  .row { grid-template-columns: 1fr; }
+  .formCard { padding: 1.75rem; }
+}

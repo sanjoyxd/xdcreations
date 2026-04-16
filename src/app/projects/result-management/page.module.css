@@ -1,0 +1,105 @@
+.hero {
+  padding: calc(var(--nav-height) + 5rem) 0 5rem;
+  position: relative;
+  text-align: center;
+  overflow: hidden;
+}
+.heroBg {
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(ellipse 80% 60% at 50% 0%, rgba(108,99,255,0.15) 0%, transparent 65%);
+  pointer-events: none;
+}
+.heroInner { position: relative; max-width: 780px; margin: 0 auto; }
+.heroTitle {
+  font-size: clamp(2.5rem, 5vw, 4rem);
+  font-weight: 800;
+  line-height: 1.1;
+  margin: 0.75rem 0 1rem;
+}
+.heroSub { font-size: 1.05rem; color: var(--text-secondary); line-height: 1.75; margin-bottom: 2.5rem; }
+.heroCtas { display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; margin-bottom: 2rem; }
+.heroTags { display: flex; justify-content: center; gap: 0.5rem; flex-wrap: wrap; }
+
+/* Screenshots */
+.screenshots { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; }
+.screenshot {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  transition: all 0.35s;
+}
+.screenshot:hover {
+  border-color: color-mix(in srgb, var(--color, #6C63FF) 50%, transparent);
+  transform: translateY(-4px);
+  box-shadow: 0 20px 60px rgba(0,0,0,0.4);
+}
+.screenshotBar {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 8px 12px;
+  background: rgba(0,0,0,0.25);
+  border-bottom: 1px solid rgba(255,255,255,0.04);
+}
+.screenshotDots { display: flex; gap: 4px; }
+.screenshotDots span { width: 7px; height: 7px; border-radius: 50%; background: rgba(255,255,255,0.08); }
+.screenshotDots span:first-child { background: #FF6584; }
+.screenshotDots span:nth-child(2) { background: #FFD060; }
+.screenshotDots span:nth-child(3) { background: #00E5A0; }
+.screenshotTitle { font-size: 0.72rem; color: var(--text-muted); }
+.screenshotContent { display: flex; min-height: 160px; }
+.screenshotSidebar {
+  width: 80px;
+  border-right: 1px solid rgba(255,255,255,0.04);
+  padding: 0.75rem 0;
+  background: rgba(0,0,0,0.15);
+}
+.sidebarItem { font-size: 0.65rem; color: var(--text-muted); padding: 0.4rem 0.75rem; cursor: default; }
+.sidebarActive {
+  color: var(--color, var(--accent-primary));
+  background: color-mix(in srgb, var(--color, #6C63FF) 12%, transparent);
+}
+.screenshotMain { flex: 1; padding: 0.75rem; display: flex; flex-direction: column; gap: 0.75rem; }
+.screenshotStats { display: flex; gap: 0.4rem; }
+.statCard { flex: 1; background: rgba(255,255,255,0.03); border: 1px solid var(--border); border-radius: 6px; padding: 0.5rem; display: flex; flex-direction: column; gap: 0.3rem; }
+.statCardTop { height: 6px; border-radius: 3px; background: color-mix(in srgb, var(--color, #6C63FF) 30%, rgba(255,255,255,0.1)); }
+.statCardBottom { height: 5px; border-radius: 3px; background: rgba(255,255,255,0.05); }
+.screenshotTable { display: flex; flex-direction: column; gap: 0.3rem; }
+.tableRow { display: flex; gap: 0.35rem; align-items: center; padding: 0.3rem 0; border-bottom: 1px solid rgba(255,255,255,0.03); }
+.tableCell { height: 7px; border-radius: 4px; background: rgba(255,255,255,0.06); }
+.screenshotCaption { padding: 0.75rem 1rem; font-size: 0.78rem; color: var(--text-muted); border-top: 1px solid var(--border); }
+
+/* Features */
+.featureGrid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1.25rem; }
+.featureCard {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: 1.75rem;
+  display: flex;
+  gap: 1.25rem;
+  align-items: flex-start;
+  transition: all 0.3s;
+}
+.featureCard:hover { border-color: rgba(108,99,255,0.3); transform: translateY(-2px); }
+.featureIcon {
+  width: 48px; height: 48px;
+  border-radius: 12px;
+  background: rgba(108,99,255,0.12);
+  border: 1px solid rgba(108,99,255,0.25);
+  display: flex; align-items: center; justify-content: center;
+  color: var(--accent-primary);
+  flex-shrink: 0;
+}
+.featureTitle { font-size: 1rem; font-weight: 700; margin-bottom: 0.4rem; }
+.featureDesc { font-size: 0.87rem; color: var(--text-secondary); line-height: 1.65; }
+
+@media (max-width: 1024px) {
+  .screenshots { grid-template-columns: 1fr; }
+  .featureGrid { grid-template-columns: 1fr; }
+}
+@media (max-width: 640px) {
+  .heroCtas { flex-direction: column; align-items: center; }
+}
